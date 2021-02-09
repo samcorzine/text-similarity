@@ -47,9 +47,9 @@ Processes the two texts to create sets of unique words. It then calculates the c
 
 #### KLD
 
-For words that are in both of the texts, calculates a vector where each entry is the count for one of the unique word. Treating each of these vectors as a histogram-like distribution, then calculates the Kullback-Liebler divergence of the two distributions. Finally, calculates the intersection metric, and divides that by 1 + <KL Divergence>. This value can distinguish two sentences that use all the same words, but have differing counts of these words. 
+For words that are in both of the texts, calculates a vector where each entry is the count for one of the unique words. Treating each of these vectors as a histogram-like distribution, then calculates the Kullback-Liebler divergence of the two distributions. Finally, calculates the intersection metric, and divides that by 1 plus the KL Divergence. This value can distinguish two sentences that use all the same words, but have differing counts of these words. 
 
 #### Cos
 
-Calculates vectors of word counts similarly to the KLD metric. Returns the cosine of the angle between these vectore, calculated using dot products. Identical texts will receive a value of 1, because the angle between the count vectors will be 0. Texts that share no words in common will give orthogonal vectors, and thus return a similarity of zero. This model was chosen as the default because it varies in a smooth and predictable way as words are modified in the sentences.
+Calculates vectors of word counts similarly to the KLD metric. Returns the cosine of the angle between these vectors, calculated using dot products. Identical texts will receive a value of 1, because the angle between the count vectors will be 0. Texts that share no words in common will give orthogonal vectors, and thus return a similarity of zero. This model was chosen as the default because it varies in a smooth and predictable way as words are modified in the sentences.
 

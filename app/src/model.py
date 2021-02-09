@@ -1,8 +1,5 @@
-# This is a sample Python script.
 import typing
 import math
-from itertools import islice
-import difflib
 
 
 def process_text(input: str) -> typing.List[str]:
