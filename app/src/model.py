@@ -1,7 +1,6 @@
 import typing
 import math
 
-
 def process_text(input: str) -> typing.List[str]:
     strip_chars = [".", "."]
     holder = input
@@ -19,7 +18,7 @@ def bag_of_words(input: typing.List[str]) -> typing.Mapping[str, int]:
             output[word] = 1
     return output
 
-
+# N-gram is dead code for right now, was intended for use calculating window-like metrics over the sentences. Deprioritized right now due to time constraint
 def n_gram(input: typing.List[str], n: int) -> typing.List[typing.List[str]]:
     if n <= 0:
         return []
