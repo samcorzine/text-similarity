@@ -13,7 +13,7 @@ This is an api that implements several text similarity algorithms.
 
 The api accepts two text passages, and scores them in similarity from 0.0 (completely dissimilar) to 1.0 (the same).
 
-Here's some example usages, navigate to a second terminal to use as a client.
+Some example request data can be found in the test-data directory. Here's some example curl requests hitting the api with the test data. Navigate to a second terminal to use as a client, and you can run any of the below commands to receive a score.
 
 A text compared to itself:
 
